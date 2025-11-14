@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Site Especial</title>
+<style>
+@font-face {
+    font-family:'CustomFont';
+    src:url('assets/font/Angelina Personal Use Only.ttf');
+}
+body {
+    margin:0;padding:0;
+    font-family:'CustomFont';
+    background:url('assets/img/tomato.png') repeat;
+    background-size:180px;
+}
+#centerbox {
+    width:70%;margin:60px auto;
+    background:rgba(255,255,255,0.88);
+    padding:30px;border-radius:15px;
+}
+.buttonbox {text-align:center;margin-top:40px;}
+button {
+    padding:15px 25px;font-size:20px;
+    background:#ff4d6d;color:white;border:none;
+    border-radius:12px;margin:10px;
+}
+</style></head>
+<body>
+<audio id="music" autoplay loop>
+ <source src="assets/audio/Luan-Santana-OLHO-MARROM-(CeeNaija.com).mp3">
+</audio>
+<div id="centerbox">
+ <h2>Seu texto personalizável</h2>
+ <p>Edite este texto no arquivo index.html.</p>
+ <div class="buttonbox">
+   <button onclick="location.href='album.html'">❤ Álbum</button>
+   <button onclick="location.href='mensagem1.html'">❤ Mensagem 1</button>
+   <button onclick="location.href='mensagem2.html'">❤ Mensagem 2</button>
+ </div>
+</div>
+<script>
+document.addEventListener('click',()=>{document.getElementById('music').muted=false;});
+</script>
+</body></html>
